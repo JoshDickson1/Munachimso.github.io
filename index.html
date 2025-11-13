@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Alexaz Care Foundation - Lending a Helping Hand</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="img/logo.png" rel="icon">
+    <link href="img/fav.png" rel="icon">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
@@ -58,7 +58,7 @@
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+            <a href="index.html" class="navbar-brand"><img src="img/fav.png" alt=""></a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -664,70 +664,58 @@
                 <div class="col-lg-5">
                     <div class="donate-form">
                         <form action="https://formspree.io/f/xldadpyq" method="POST" id="donateForm">
-  <div class="control-group">
-    <input 
-      type="text" 
-      name="name" 
-      class="form-control" 
-      placeholder="Name" 
-      required
-    />
-  </div>
+                            <div class="control-group">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required />
+                            </div>
 
-  <div class="control-group">
-    <input 
-      type="email" 
-      name="email" 
-      class="form-control" 
-      placeholder="Email" 
-      required
-    />
-  </div>
+                            <div class="control-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required />
+                            </div>
 
-  <div class="btn-group btn-group-toggle" data-toggle="buttons">
-    <label class="btn btn-custom active">
-      <input type="radio" name="amount" value="$10" checked> $10
-    </label>
-    <label class="btn btn-custom">
-      <input type="radio" name="amount" value="$20"> $20
-    </label>
-    <label class="btn btn-custom">
-      <input type="radio" name="amount" value="$30"> $30
-    </label>
-  </div>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-custom active">
+                                    <input type="radio" name="amount" value="$10" checked> $10
+                                </label>
+                                <label class="btn btn-custom">
+                                    <input type="radio" name="amount" value="$20"> $20
+                                </label>
+                                <label class="btn btn-custom">
+                                    <input type="radio" name="amount" value="$30"> $30
+                                </label>
+                            </div>
 
-  <div>
-    <button class="btn btn-custom" type="submit">Donate Now</button>
-  </div>
-</form>
+                            <div>
+                                <button class="btn btn-custom" type="submit">Donate Now</button>
+                            </div>
+                        </form>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("donateForm");
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                const form = document.getElementById("donateForm");
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
+                                form.addEventListener("submit", async (e) => {
+                                    e.preventDefault();
+                                    const formData = new FormData(form);
 
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
+                                    try {
+                                        const response = await fetch(form.action, {
+                                            method: form.method,
+                                            body: formData,
+                                            headers: { 'Accept': 'application/json' }
+                                        });
 
-      if (response.ok) {
-        alert("💖 Thank you for your pledge! We'll reach out with donation details.");
-        form.reset();
-      } else {
-        alert("⚠️ Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      alert("❌ Network error. Please check your connection.");
-    }
-  });
-});
-</script>
+                                        if (response.ok) {
+                                            alert("💖 Thank you for your pledge! We'll reach out with donation details.");
+                                            form.reset();
+                                        } else {
+                                            alert("⚠️ Something went wrong. Please try again.");
+                                        }
+                                    } catch (error) {
+                                        alert("❌ Network error. Please check your connection.");
+                                    }
+                                });
+                            });
+                        </script>
 
                     </div>
                 </div>
@@ -740,8 +728,8 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="team">
         <div class="container">
             <div class="section-header text-center">
-                <p>Meet Our Team</p>
-                <h2>Awesome guys behind our charity activities</h2>
+                <p>Meet Our CEO</p>
+                <h2>Awesome person behind our charity activities</h2>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-8">

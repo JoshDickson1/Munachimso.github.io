@@ -1,11 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>Alexaz Care Foundation - Lending a Helping Hand</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="img/fav.png" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- Top Bar Start -->
+    <div class="top-bar d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="top-bar-left">
+                        <div class="text">
+                            <i class="fa fa-phone-alt"></i>
+                            <p>+234 816 117 0139</p>
+                        </div>
+                        <div class="text">
+                            <i class="fa fa-envelope"></i>
+                            <p>info@alexazcarefoundation.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="top-bar-right">
+                        <div class="social">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/alexaz-care-foundation-57aaa1391"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="img/fav.png" alt=""></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="causes.html" class="nav-item nav-link">Causes</a>
+                    <a href="team.html" class="nav-item nav-link">Team</a>
+                    <a href="volunteer.html" class="nav-item nav-link">Volunteer</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="donate.html" class="nav-item donate-btn">Donate Now</a>
+                    <style>
+                        .donate-btn {
+                            background-color: #123354;
+                            color: #ffffff !important;
+                            padding: 10px 35px;
+                            width: 100%;
+                            max-width: 200px;
+                            /* Adjust this value as needed */
+                            border-radius: 5px;
+                            display: block;
+                            margin: auto;
+                            text-align: center;
+                            transition: background-color 0.3s ease, color 0.3s ease;
+                        }
+
+                        /* Tablet and mobile - full width */
+                        @media (max-width: 1024px) {
+                            .donate-btn {
+                                max-width: none;
+                                width: 100%;
+                            }
+                        }
+
+                        .donate-btn:hover {
+                            background-color: #0d2440;
+                        }
+
+                        /* When scrolled */
+                        .donate-btn.scrolled {
+                            background-color: #ffffff;
+                            color: #123354 !important;
+                        }
+
+                        .donate-btn.scrolled:hover {
+                            background-color: #f0f0f0;
+                        }
+                    </style>
+                    <script>
+                        window.addEventListener('scroll', function () {
+                            const donateBtn = document.querySelector('.donate-btn');
+
+                            if (window.scrollY > 0) {
+                                donateBtn.classList.add('scrolled');
+                            } else {
+                                donateBtn.classList.remove('scrolled');
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="col-12">
+                    <a href="index.html">Home</a>
+                    <a href="faq.html">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- FAQs Start -->
+    <div class="faqs mt-5 mb-5">
+        <div class="container">
+            <div class="section-header text-center mb-4">
+                <p>Frequently Asked Questions</p>
+                <h2>Learn More About Alexaz Care Foundation</h2>
+            </div>
+
+            <div id="accordion">
+
+                <!-- Mission -->
+                <div class="card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is Alexaz Care Foundation all about?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Alexaz Care Foundation is a non-profit organization dedicated to lending a helping hand to
+                            underprivileged individuals and communities. We focus on humanitarian aid, community
+                            development,
+                            education, and health awareness initiatives across Nigeria and beyond. Our goal is to
+                            empower people
+                            to live with dignity and hope through sustainable support programs.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donations -->
+                <div class="card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How can I make a donation?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            You can make donations directly through our <a href="donate.html">Donate Now</a> page. We
+                            accept both
+                            local and international contributions. Every donation, no matter the size, helps us reach
+                            more people
+                            in need with food, education, medical support, and essential care. You’ll also receive
+                            updates on how
+                            your donation is being used to impact lives.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volunteering -->
+                <div class="card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How can I become a volunteer?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Joining as a volunteer is simple. Visit our <a href="volunteer.html">Volunteer Page</a> and
+                            fill out
+                            the volunteer registration form. Once submitted, our team will review your application and
+                            reach out
+                            to you with upcoming events and opportunities where your skills and passion can make the
+                            greatest
+                            impact.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transparency -->
+                <div class="card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How does Alexaz Care Foundation ensure transparency?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            We believe in complete accountability and transparency. All donations and project outcomes
+                            are
+                            documented and reported to our donors and partners. We also share updates and visual reports
+                            of
+                            completed outreach programs, so you can see the tangible impact your support creates in real
+                            lives.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partnerships -->
+                <div class="card wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Can organizations or brands partner with Alexaz Care Foundation?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            Absolutely. We actively collaborate with companies, NGOs, and community groups that share
+                            our vision.
+                            Partnerships can involve sponsorships, co-organized outreach programs, or donations in kind.
+                            Interested organizations can reach us via <a href="contact.html">our contact page</a> or by
+                            emailing
+                            <strong>info@alexazcarefoundation.com</strong>.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact -->
+                <div class="card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                What impact has Alexaz Care Foundation made so far?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                            Since our inception, we’ve reached hundreds of families with food relief, organized
+                            community
+                            medical outreach programs, and provided educational materials to children in rural areas. We
+                            also
+                            run empowerment workshops and awareness campaigns focused on health, hygiene, and social
+                            issues
+                            affecting our communities.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get Involved -->
+                <div class="card wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                How can I stay updated with your projects?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body">
+                            You can subscribe to our <a href="#newsletter">newsletter</a> at the bottom of the page or
+                            follow us
+                            on our social media platforms — Instagram, LinkedIn, Facebook, and Twitter — for real-time
+                            updates,
+                            photos, and upcoming projects.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+    <style>
+        .faqs .card {
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .faqs .card-header {
+            background-color: #123354;
+            color: #fff;
+            padding: 0;
+        }
+
+        .faqs .btn-link {
+            color: #fff;
+            text-decoration: none;
+            width: 100%;
+            text-align: left;
+            padding: 15px 20px;
+            font-weight: 500;
+        }
+
+        .faqs .btn-link:hover {
+            background-color: #0e2948;
+            color: #fff;
+        }
+
+        .faqs .card-body {
+            background: #fff;
+            color: #444;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .section-header p {
+            color: #123354;
+            font-weight: 600;
+        }
+    </style>
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h2>Our Head Office</h2>
+                        <p><i class="fa fa-map-marker-alt"></i>Ikeja, Lagos, Nigeria</p>
+                        <p><i class="fa fa-phone-alt"></i>+234 816 117 0139</p>
+                        <p style="display: flex; flex: row; row-gap: 2; align-items: center;"><i
+                                class="fa fa-envelope"></i><span>info@alexazcarefoundation.com</span></p>
+                        <div class="footer-social">
+                            <a class="btn btn-custom" href="https://www.facebook.com/share/1A5kmrAptW"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <!-- <a class="btn btn-custom" href=""><i class="fab fa-youtube"></i></a> -->
+                            <a class="btn btn-custom" href="https://www.instagram.com/alexaz_care_foundation"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-custom"
+                                href="https://www.linkedin.com/in/alexaz-care-foundation-57aaa1391"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Popular Links</h2>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <!-- <a href="">Upcoming Events</a> -->
+                        <!-- <a href="">Latest Blog</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-link">
+                        <h2>Useful Links</h2>
+                        <!-- <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a> -->
+                        <!-- <a href="">Cookies</a> -->
+                        <!-- <a href="">Help</a> -->
+                        <a href="causes.html">Popular Causes</a>
+                        <a href="faq.html">FQAs</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-newsletter">
+                        <h2>Newsletter</h2>
+                        <form action="https://formspree.io/f/mpwkwygd" method="POST">
+                            <input type="email" name="email" class="form-control" required
+                                placeholder="Email goes here">
+                            <button type="submit" class="btn btn-custom">Submit</button>
+                            <label>Don't worry, we don't spam!</label>
+                        </form>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", () => {
+                                const form = document.querySelector("form");
+
+                                form.addEventListener("submit", async (e) => {
+                                    e.preventDefault();
+                                    const formData = new FormData(form);
+
+                                    try {
+                                        const response = await fetch(form.action, {
+                                            method: form.method,
+                                            body: formData,
+                                            headers: { 'Accept': 'application/json' }
+                                        });
+
+                                        if (response.ok) {
+                                            alert("🎉 Thank you for subscribing!");
+                                            form.reset();
+                                        } else {
+                                            alert("⚠️ Something went wrong. Please try again.");
+                                        }
+                                    } catch (error) {
+                                        alert("❌ Network error. Please check your connection.");
+                                    }
+                                });
+                            });
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; <a href="#">Alexaz Care Foundation</a>, All Right Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <p>Designed By <a href="https://www.instagram.com/bi_tech2.0">BiTech</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
