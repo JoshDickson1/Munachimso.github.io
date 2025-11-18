@@ -94,7 +94,7 @@
         animateIn: 'slideInDown',
         animateOut: 'slideOutDown',
         items: 1,
-        smartSpeed: 450,
+        smartSpeed: 2500,
         dots: false,
         loop: true,
         responsive: {
@@ -176,4 +176,6 @@
     });
     
 })(jQuery);
+
+
 
