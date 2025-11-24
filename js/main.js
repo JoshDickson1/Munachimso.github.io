@@ -94,7 +94,7 @@
         animateIn: 'slideInDown',
         animateOut: 'slideOutDown',
         items: 1,
-        smartSpeed: 2500,
+        smartSpeed: 10500,
         dots: false,
         loop: true,
         responsive: {
