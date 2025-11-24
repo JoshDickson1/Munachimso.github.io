@@ -530,6 +530,499 @@ a:focus {
 }
 
 
+/* Section */
+.acf-events-section {
+  background: #ffffff;
+  padding: 50px 0;
+}
+/* Container */
+.acf-container {
+  width: 90%;
+  max-width: 1200px; /* increased from 1100px */
+  margin: auto;
+  text-align: center;
+}
+/* Heading */
+.acf-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #123354;
+  margin-bottom: 10px;
+}
+/* Subtext */
+.acf-subtext {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+/* Grid for cards */
+.acf-events-grid {
+  display: grid;
+  gap: 35px; /* increased from 30px */
+}
+/* Responsive: 2 columns on tablet+ */
+@media (min-width: 768px) {
+  .acf-events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Event Card */
+.acf-event-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  background: #f8f9fb;
+}
+/* Desktop layout: image + text side-by-side */
+@media (min-width: 768px) {
+  .acf-event-card {
+    flex-direction: row; /* side-by-side */
+  }
+}
+/* Event Image */
+.acf-event-image img {
+  width: 100%;
+  height: 260px; /* increased from 220px */
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .acf-event-image img {
+    width: 260px; /* increased from 230px */
+    height: 100%;
+  }
+}
+/* Event Text */
+.acf-event-content {
+  padding: 25px; /* increased from 20px */
+  text-align: left;
+}
+/* Event Title */
+.acf-event-title {
+  font-size: 20px; /* increased from 18px */
+  font-weight: 600;
+  color: #123354;
+  margin-bottom: 12px; /* increased from 10px */
+}
+/* Date */
+.acf-event-date {
+  color: #666;
+  margin-bottom: 12px; /* increased from 10px */
+  font-size: 15px; /* increased from 14px */
+}
+/* News Link */
+.acf-event-link {
+  color: #123354;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+.acf-event-link:hover {
+  opacity: 0.7;
+}
+/* Highlight text */
+.acf-highlight-text {
+  margin-top: 40px;
+  color: #123354;
+  font-size: 15px;
+}
+
+/* Hero Section with Blue Background */
+        .acf-hero-section {
+            background: linear-gradient(135deg, #123354 0%, #1a4d7a 100%);
+            padding: 160px 20px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .acf-hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('../img/e1.jpg') center/cover;
+            opacity: 0.15;
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .acf-hero-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .acf-hero-content {
+            max-width: 800px;
+        }
+
+        .acf-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .acf-breadcrumb a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .acf-breadcrumb a:hover {
+            color: white;
+        }
+
+        .acf-event-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .acf-single-title {
+            font-size: 48px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .acf-single-date {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+
+        .acf-single-date svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .acf-hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .acf-stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .acf-stat-number {
+            font-size: 32px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .acf-stat-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* White Content Section */
+        .acf-single-event {
+            background: #ffffff;
+            padding: 0 0 80px;
+            margin-top: -50px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .acf-single-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* Success Card */
+        .acf-success-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            border-left: 6px solid #123354;
+        }
+
+        .acf-success-icon {
+            width: 50px;
+            height: 50px;
+            background: #e8f5e9;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .acf-success-icon svg {
+            width: 28px;
+            height: 28px;
+            color: #2e7d32;
+        }
+
+        .acf-required-line {
+            color: #123354;
+            font-size: 20px;
+            line-height: 1.7;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .acf-required-line strong {
+            font-weight: 800;
+            color: #0d2540;
+        }
+
+        /* Article Link */
+        .acf-article-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 30px 0 50px;
+            color: white;
+            background: #123354;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(18, 51, 84, 0.3);
+        }
+
+        .acf-article-link:hover {
+            background: #0d2540;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(18, 51, 84, 0.4);
+        }
+
+        .acf-article-link svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Gallery Section */
+        .acf-gallery-section {
+            margin: 60px 0;
+        }
+
+        .acf-gallery-header {
+            margin-bottom: 30px;
+        }
+
+        .acf-gallery-header h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #123354;
+            margin-bottom: 10px;
+        }
+
+        .acf-gallery-header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Masonry Gallery Layout */
+        .acf-gallery {
+            column-count: 1;
+            column-gap: 20px;
+        }
+
+        .acf-gallery-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .acf-gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .acf-gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .acf-gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .acf-gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(18, 51, 84, 0.8) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+        .acf-gallery-item:hover .acf-gallery-overlay {
+            opacity: 1;
+        }
+
+        .acf-gallery-caption {
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        @media (min-width: 640px) {
+            .acf-gallery {
+                column-count: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .acf-gallery {
+                column-count: 3;
+            }
+        }
+
+        /* Description Section */
+        .acf-description-section {
+            margin: 60px 0;
+        }
+
+        .acf-description-section h3 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #123354;
+            margin-bottom: 20px;
+        }
+
+        .acf-single-description p {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Impact Section */
+        .acf-impact-section {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 40px;
+            border-radius: 16px;
+            margin: 60px 0;
+            border-left: 6px solid #2e7d32;
+        }
+
+        .acf-impact-section h3 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1b5e20;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .acf-impact-section h3 svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .acf-impact-list {
+            list-style: none;
+        }
+
+        .acf-impact-list li {
+            font-size: 18px;
+            color: #2e7d32;
+            margin-bottom: 12px;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 600;
+        }
+
+        .acf-impact-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: 900;
+            font-size: 20px;
+        }
+
+        /* Partners Section */
+        .acf-partners-section {
+            text-align: center;
+            margin: 60px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 16px;
+        }
+
+        .acf-partners-section h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #666;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .acf-partner-name {
+            font-size: 24px;
+            font-weight: 800;
+            color: #123354;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .acf-single-title {
+                font-size: 32px;
+            }
+
+            .acf-hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .acf-success-card {
+                padding: 25px;
+            }
+
+            .acf-required-line {
+                font-size: 17px;
+            }
+        }
+
+
 /*******************************/
 /******* Page Header CSS *******/
 /*******************************/
