@@ -635,6 +635,13 @@ a:focus {
             position: relative;
             overflow: hidden;
         }
+        
+        .aba-acf-hero-section {
+            background: linear-gradient(135deg, #123354 0%, #1a4d7a 100%);
+            padding: 160px 20px 100px;
+            position: relative;
+            overflow: hidden;
+        }
 
         .acf-hero-section::before {
             content: '';
@@ -644,6 +651,18 @@ a:focus {
             width: 50%;
             height: 100%;
             background: url('../img/e1.jpg') center/cover;
+            opacity: 0.15;
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .aba-acf-hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('../img/i2.jpg') center/cover;
             opacity: 0.15;
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         }
