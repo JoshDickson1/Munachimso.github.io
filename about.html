@@ -413,10 +413,10 @@
       <!-- PDF Preview -->
       <div class="acf-reg-right">
         <div class="acf-pdf-preview">
-          <iframe
-            src="CERTIFICATE -  Alexaz Care Foundation .pdf"
-            title="Alexaz Care Foundation Registration Certificate">
-          </iframe>
+          <img
+            src="img/cert.png"
+            alt="Alexaz Care Foundation Registration Certificate"
+          />
         </div>
       </div>
     </div>
@@ -495,13 +495,14 @@
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   overflow: hidden;
-  height: 420px;
+  height: 400px;
 }
 
-.acf-pdf-preview iframe {
+.acf-pdf-preview img {
   width: 100%;
   height: 100%;
   border: none;
+  object-fit: contain;
 }
 
 /* Responsive */
