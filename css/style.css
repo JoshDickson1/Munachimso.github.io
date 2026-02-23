@@ -650,6 +650,7 @@ a:focus {
             overflow: hidden;
         }
 
+
         .acf-hero-section::before {
             content: '';
             position: absolute;
@@ -686,7 +687,34 @@ a:focus {
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         }
 
+        .new-hero-section {
+            background: linear-gradient(135deg, #123354 0%, #1a4d7a 100%);
+            padding: 160px 20px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .new-hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('../img/new2.jpg') center/cover;
+            opacity: 0.15;
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
         .acf-hero-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .new-hero-container {
             width: 90%;
             max-width: 1200px;
             margin: auto;
