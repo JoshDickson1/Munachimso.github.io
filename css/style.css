@@ -701,7 +701,7 @@ a:focus {
             right: 0;
             width: 50%;
             height: 100%;
-            background: url('../img/new2.jpg') center/cover;
+            background: url('../img/new2.JPG') center/cover;
             opacity: 0.15;
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         }
