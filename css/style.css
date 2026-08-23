@@ -766,7 +766,7 @@ a:focus {
             right: 0;
             width: 50%;
             height: 100%;
-            background: url('../img/hep1.jpg') center/cover;
+            background: url('../img/hep-new1.jpeg') center/cover;
             opacity: 0.15;
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         }
@@ -785,7 +785,7 @@ a:focus {
             right: 0;
             width: 50%;
             height: 100%;
-            background: url('../img/feed-abia1.jpg') center/cover;
+            background: url('../img/feed-new1.jpeg') center/cover;
             opacity: 0.15;
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         }
@@ -804,7 +804,7 @@ a:focus {
             right: 0;
             width: 50%;
             height: 100%;
-            background: url('../img/sickle1.jpg') center/cover;
+            background: url('../img/sickle-new1.jpeg') center/cover;
             opacity: 0.15;
             clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         }
